@@ -12,7 +12,7 @@
 #include <limits.h>
 #include <string.h>
 #include <ctype.h>
-#include "/c/cs223/Hwk3/getLine.h"
+#include "getLine.h"
 #include "Tree.h"
 
 
