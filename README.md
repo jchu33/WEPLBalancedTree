@@ -9,25 +9,25 @@ Words16
 maintains a tree of (word,count) pairs and an improvement factor IF (initially
 0), and accepts six types of arguments:
 
-  TEXTFILE        Read words from TEXTFILE; increment the count for those that
+  TEXTFILE:        Read words from TEXTFILE; increment the count for those that
                   are in the tree; insert with a count of 1 those that are not
 
-  -d DICTFILE     Read words from DICTFILE; delete from the tree those that are
+  -d DICTFILE:     Read words from DICTFILE; delete from the tree those that are
                   in the tree
 
-  -print          Write the (word,count) pairs in the tree to the standard
+  -print:         Write the (word,count) pairs in the tree to the standard
                   output in inorder (that is, in alphabetic order), one word
                   per line, preceded by its count, using the format "%3d %s\n"
 
-  -dump           Write the words (including those in internal nodes; see
+  -dump:           Write the words (including those in internal nodes; see
                   below) in the tree to the standard output in preorder, one
                   word per line, using the format "%s".
 
-  -epl            Write the sum of the counts in the leaves and the weighted
+  -epl:            Write the sum of the counts in the leaves and the weighted
                   external path length for the tree to the standard output,
                   using the format "%d, %d\n"
 
-  -set VALUE      Set the improvement factor IF to the integer VALUE
+  -set VALUE:      Set the improvement factor IF to the integer VALUE
 
 Each command line argument is processed at the time it is encountered.  Thus
 with the command
