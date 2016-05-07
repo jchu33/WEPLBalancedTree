@@ -9,8 +9,6 @@ Words16
 maintains a tree of (word,count) pairs and an improvement factor IF (initially
 0), and accepts six types of arguments:
 
-  Type            Action Taken
-  ----            ------------
   TEXTFILE        Read words from TEXTFILE; increment the count for those that
                   are in the tree; insert with a count of 1 those that are not
 
